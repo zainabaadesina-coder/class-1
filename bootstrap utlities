@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+      crossorigin="anonymous">
+
+</head>
+<body>
+
+  <div class="card" style="width: 18rem;">
+ <img src="data:image/jpeg;base64,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" class="card-img">
+    
+  <div class="card-body bg-danger text-white">
+   <h5 class="card-title">knowledge</h5>
+   <p class="card-text">knowledge isnt unlimted keep trying and it would happen and you would be able to try and help others Thanks</p>
+   </div>
+
+   
+
+</body>
+</html>
