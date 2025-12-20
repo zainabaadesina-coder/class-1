@@ -1,0 +1,16 @@
+<body>
+<h2>JavaScript Arrays</h2>,
+
+<p id="demo"></p>,
+
+<script>
+var cars = [
+    "coding",
+    "plaing",
+    "learn",
+
+];
+document.getElementById("dmo").innerHTML = cars[2];
+</script>
+
+</body>
