@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+
+    <!-- Bootstrap -->
+
+<link
+
+rel="stylesheet"
+
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+
+/>
+
+<!-- Font Awesome -->
+
+
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+    <!-- ================= SOCIAL MEDIA ================= -->
+
+    <section id="social-media">
+        <div class="container py-5 text-white">
+            <h3 class="text-primary">Social Media</h3>
+            <h2>Let's be friends</h2>
+
+            <div class="row mt-4">
+
+                <!-- Linkedin -->
+                 <div class="col-md-3 col-sm-6 mb-3">
+                 <div class="media_link d-flex justify-content-between align-items-center">
+                    <span>Linkedin</span>
+                    <i class="fa fa-linkedin"></i>
+                 </div>
+            </div>
+
+            <!-- Github -->
+             <div class="col-md-3 col-sm-6 mb-3">
+                <div class="media_link d-flex justify-content-between align-items-center">
+                    <span>Github</span>
+                    <i class="fa fa-github"></i>
+                </div>
+             </div>
+
+             <!-- Youtube -->
+              <div class="col-md-3 col-sm-6 mb-3">
+                <div class="media_link d-flex justify-content-between align-items-center">
+                    <span>Youtube</span>
+                    <i class="fa fa-youtube"></i>
+                </div>
+              </div>
+
+            <!-- Emali -->
+             <div class="col-md-3 col-sm-6 mb-3">
+                <div class="media_link d-flex justify-content-between align-items-center">
+                    <span>Email</span>
+                    <i class="fa fa-envelope"></i>
+                </div>
+             </div>
+
+        </div>
+    </section>
+
+    
+</body>
+</html>
