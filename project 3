@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Social Media — Let's be friends</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+  <!-- Font Awesome 4.7 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+    :root{
+      /* cooler pastel palette */
+      --page-start: #f5f0ff; /* pale lavender */
+      --page-mid:   #fff5fb; /* pale pink */
+      --card-bg:    rgba(255,255,255,0.7);
+      --glass-blur: 6px;
+
+      /* cooler light pink for buttons */
+      --cool-pink:       #ffd6ea; /* light, cool pink */
+      --cool-pink-strong:#ff8fcf; /* hover/active tone */
+      --muted:           #6c757d;
+      --rounded:         14px;
+      --accent-text:     #222028;
+    }
+
+    /* page background: cool pastel gradient */
+    body{
+      min-height: 100vh;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--accent-text);
+      background: linear-gradient(135deg, var(--page-start) 0%, var(--page-mid) 60%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+    }
+
+    /* container card with subtle glass effect */
+    #social-media{
+      width: 100%;
+      max-width: 980px;
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(16,24,40,0.09);
+      backdrop-filter: blur(var(--glass-blur));
+      border: 1px solid rgba(243, 42, 122, 0.5);
+    }
+
+    .section-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    h2{
+      margin: 0;
+      font-size: 1.6rem;
+      letter-spacing: -0.2px;
+    }
+
+    .lead{
+      margin: 0;
+      color: var(--muted);
+    }
+
+    /* grid */
+    .media-grid{ margin-top: 1.25rem; }
+
+    /* whole card is a button-like link */
+    a.media-card{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: var(--rounded);
+      background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.55));
+      border: 1px solid rgba(255,255,255,0.6);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 12px rgba(16,24,40,0.04);
+      align-items: center;
+    }
+
+    a.media-card:focus,
+    a.media-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(16,24,40,0.12);
+      background: linear-gradient(180deg, rgba(219, 50, 151, 0.9), rgba(244, 31, 152, 0.7));
+      outline: none;
+    }
+
+    .label{ display:flex; flex-direction:column; }
+    .title{ font-weight:700; color: #14121a; }
+    .subtitle{ font-size: .9rem; color: var(--muted); }
+
+    /* icon badge styled as the cooler light pink */
+    .icon{
+      width: 52px;
+      height: 52px;
+      display:grid;
+      place-items:center;
+      border-radius: 12px;
+      color: #ec235f; /* darker for contrast on pink */
+      background: var(--cool-pink);
+      font-size: 1.35rem;
+      transition: background .15s ease, transform .15s ease;
+      flex-shrink:0;
+    }
+    
+
+    /* stronger hover color when parent hovered */
+    a.media-card:hover .icon,
+    a.media-card:focus .icon{
+      background: var(--cool-pink-strong);
+      transform: scale(1.06);
+      color: #fff;
+    }
+
+    /* icon backgrounds kept subtle for brand icons */
+    .icon i.fa{ display:inline-block; line-height:1; }
+
+    /* spacing tweaks for small screens */
+    @media (max-width: 575px){
+      .icon{ width:44px; height:44px; font-size:1.05rem; border-radius:10px; }
+      a.media-card{ padding:0.6rem 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="social-media" aria-labelledby="social-heading">
+      <div class="section-header">
+        <div>
+          <h3 id="social-heading" class="text-danger mb-1">Social Media</h3>
+          <h2>Let's be friends</h2>
+        </div>
+      </div>
+
+      <ul class="row media-grid list-unstyled">
+        <li class="col-12 col-sm-6 col-md-4 mb-3">
+          <a class="media-card" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — opens in a new tab">
+            <div class="label">
+              <span class="title">LinkedIn</span>
+              <span class="subtitle">Professional profile</span>
+            </div>
+            <span class="icon" aria-hidden="true"><i class="fa fa-linkedin"></i></span>
+            <span class="sr-only">LinkedIn profile</span>
+          </a>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 mb-3">
+          <a class="media-card" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub — opens in a new tab">
+            <div class="label">
+              <span class="title">GitHub</span>
+              <span class="subtitle">Projects &amp; code</span>
+            </div>
+            <span class="icon" aria-hidden="true"><i class="fa fa-github"></i></span>
+            <span class="sr-only">GitHub profile</span>
+          </a>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 mb-3">
+          <a class="media-card" href="https://www.youtube.com/channel/your-channel" target="_blank" rel="noopener noreferrer" aria-label="YouTube — opens in a new tab">
+            <div class="label">
+              <span class="title">YouTube</span>
+              <span class="subtitle">Videos &amp; tutorials</span>
+            </div>
+            <span class="icon" aria-hidden="true"><i class="fa fa-youtube"></i></span>
+            <span class="sr-only">YouTube channel</span>
+          </a>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 mb-3">
+          <a class="media-card" href="mailto:your.email@example.com" aria-label="Email me">
+            <div class="label">
+              <span class="title">Email</span>
+              <span class="subtitle">Send a message</span>
+            </div>
+            <span class="icon" aria-hidden="true"><i class="fa fa-envelope"></i></span>
+            <span class="sr-only">Send an email</span>
+          </a>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 mb-3">
+          <a class="media-card" href="https://www.pinterest.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Pinterest — opens in a new tab">
+            <div class="label">
+              <span class="title">Pinterest</span>
+              <span class="subtitle">Design inspiration</span>
+            </div>
+            <span class="icon" aria-hidden="true"><i class="fa fa-pinterest"></i></span>
+            <span class="sr-only">Pinterest profile</span>
+          </a>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 mb-3">
+          <a class="media-card" href="https://www.whatsapp.com/your-number" target="_blank" rel="noopener noreferrer" aria-label="whatsapp — opens in a new tab">
+            <div class="label">
+              <span class="title">whatsapp</span>
+              <span class="subtitle">Messages &amp; text</span>
+            </div>
+            <span class="icon" aria-hidden="true"><i class="fa fa-whatsapp"></i></span>
+            <span class="sr-only">whatsapp profile</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Optional JS for Bootstrap components -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
