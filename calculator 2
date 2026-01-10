@@ -1,0 +1,105 @@
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-color: black;
+}
+
+#container {
+    width:1000px;
+    height: 550px;
+    margin: 20px auto;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)
+    ),
+    url(bgImg.jpg);
+}
+
+#calculator {
+    width: 320px;
+    min-height: 520px;
+    background-color: #fa94d6ff
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(247, 138, 138, 0.79)
+                0 15px 24px rgba(252, 70, 70, 0.78)
+}
+
+#result {
+    height: 120px;
+}
+
+#history {
+    text-align: right;
+    height: 40px;
+    margin: 10px 20px;
+    font-size: 18px;
+    color: #f27cbdff
+}
+
+#output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#keyboard {
+    height: 400px;
+    padding-top: 20px;
+}
+
+.operator,
+.number,
+.empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border: none;
+    font: none;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+.number {
+    background-color: #fa94d6ff;
+    cursor:  pointer;
+}
+
+.operator {
+    background-color: #fa94d6ff;
+    cursor: pointer;
+}
+
+.empty {
+
+background-color: transparent;
+  box-shadow: none;
+}
+
+/* ===== Hover effects ===== */
+.number:hover {
+  background-color: #fa94d6ff;
+}
+
+.operator:hover {
+  background-color: #fa94d6ff;
+  color: white;
+}
+
+/* ===== Active effect ===== */
+.number:active,
+.operator:active {
+  transform: scale(0.95);
+}
+
+/* ===== Remove outline ===== */
+button:focus {
+  outline: none;
+}
+
