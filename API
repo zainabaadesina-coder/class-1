@@ -1,0 +1,5 @@
+from flask import Flask, render_template, request
+import json
+import urllib.request
+# Conceptual look at passing data to the frontend
+return render_template('index.html', lat=latitude, lng=longitude, api_key=your_api_key)
