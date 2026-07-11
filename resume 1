@@ -181,18 +181,18 @@
     <div class="resume-container">
         
         <div class="header">
-            <h1>Hi, I'm Jamie! 👋</h1>
+            <h1>Hi, I'm Zainab! 👋</h1>
             <div class="contact-info">
-                <span>📧 jamie.studying@email.com</span> | 
-                <span>📱 (555) 987-6543</span> | 
-                <span>🌐 github.com/jamie-codes</span>
+                <span>📧 zainabaadesina@gmail.com</span> | 
+                <span>📱 (+44)425 894 422</span> | 
+                <span>🌐 github.com/zainabaadesina-coder</span>
             </div>
         </div>
 
         <div class="section">
             <div class="section-title">About Me</div>
             <p style="line-height: 1.5; margin: 0;">
-                I am a 2nd-year Computer Science student who loves building web apps and experimenting with frontend styles. Right now, I am looking for a cool summer internship where I can learn more about full-stack programming and work on real-world projects!
+                I am in year 9. I study Computer Science. I love building web apps and experimenting with frontend styles. Right now, I am looking for a cool summer class where I can learn more about full-stack programming and work on real-world projects!
             </p>
         </div>
 
@@ -200,12 +200,12 @@
             <div class="section-title">Education</div>
             <div class="item">
                 <div class="item-header">
-                    <span>B.S. in Computer Science</span>
-                    <span>Expected Graduation: 2028</span>
+                    <span>certificate in Computer Science</span>
+                    <span>Expected Graduation: 2030</span>
                 </div>
-                <div class="item-sub">Oakridge University (GPA: 3.6/4.0)</div>
+                <div class="item-sub">Fortis Academy (Grade 7/8)</div>
                 <p style="margin: 5px 0 0 0; font-size: 0.9rem; color: #705660;">
-                    <strong>Relevant Courses:</strong> Data Structures, Web Development 101, Introduction to Databases.
+                    <strong>Relevant Courses:</strong> Data Structures, web developer skills, Introduction to Databases.
                 </p>
             </div>
         </div>
@@ -220,47 +220,47 @@
                 </div>
                 <div class="item-sub">Python, Flask, SQLite, HTML/CSS</div>
                 <ul>
-                    <li>Built a secure web app that lets students register accounts and log in seamlessly.</li>
+                    <li>Built a calculator</li>
                     <li>Connected a dynamic backend logic loop to a local SQLite database for fast user data lookups.</li>
-                    <li>Styled the entire interface with an animated pink gradient and floating bubbles!</li>
+                    <li>Built a website poster for my dads business</li>
                 </ul>
             </div>
 
             <div class="item">
                 <div class="item-header">
-                    <span>Campus Event Tracker</span>
-                    <span>Hackathon Project</span>
+                    <span>School event</span>
+                    <span>STEM WORSHOP</span>
                 </div>
-                <div class="item-sub">HTML, CSS, JavaScript</div>
+                <div class="item-sub">HTML, JavaScript</div>
                 <ul>
-                    <li>Worked in a team of 3 to code a quick prototype site that helps students find free food on campus.</li>
-                    <li>Designed the clean, interactive map feature using simple frontend arrays.</li>
+                    <li>Worked in a team of 5 to create a moving car</li>
+                    <li>Designed the clean, interactive map feature using simple frontend arrays and connecting the api.</li>
                 </ul>
             </div>
         </div>
 
         <div class="section">
-            <div class="section-title">Campus Life & Experience</div>
+            <div class="section-title">School life& Experience</div>
             
             <div class="item">
                 <div class="item-header">
-                    <span>Tech Committee Member</span>
+                    <span>Year 9 leaderr</span>
                     <span>2025 - Present</span>
                 </div>
-                <div class="item-sub">University Computer Science Club</div>
+                <div class="item-sub">Coding lessons and arabic lessons</div>
                 <ul>
-                    <li>Help organize weekly coding meetups and set up project showcases for freshmen students.</li>
+                    <li>helping and thinking to create and build my coding skills</li>
                 </ul>
             </div>
 
             <div class="item">
                 <div class="item-header">
-                    <span>Student Computer Lab Assistant</span>
-                    <span>Part-Time Job</span>
+                    <span>Student Computer science Assistant</span>
+                    <span>school role</span>
                 </div>
-                <div class="item-sub">Campus Library</div>
+                <div class="item-sub">Library</div>
                 <ul>
-                    <li>Assisted peers with basic technical debugging, printing issues, and connecting to the school Wi-Fi network.</li>
+                    <li>Assisted peers with basic technical debugging, typing codes, and connecting to the school Wi-Fi network.</li>
                 </ul>
             </div>
         </div>
@@ -270,10 +270,9 @@
             <ul class="skills-list">
                 <li>Python</li>
                 <li>Flask Framework</li>
-                <li>SQLite Fundamentals</li>
-                <li>HTML5 & Custom CSS</li>
                 <li>Basic JavaScript</li>
                 <li>Git/GitHub</li>
+                <li>DOCTYPE/HTML!</li>
                 <li>Team Collaboration</li>
             </ul>
         </div>
