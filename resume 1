@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Resume</title>
+    <style>
+        /* Pink Gradient Background & Settings */
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: 'Comic Sans MS', 'Segoe UI', sans-serif; /* A bit more casual and student-friendly */
+            background: linear-gradient(-45deg, #ff9a9e, #fecfef, #feada6, #f5f7fa);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Glassmorphism Container with a softer student vibe */
+        .resume-container {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(255, 154, 158, 0.2);
+            z-index: 2;
+            width: 100%;
+            max-width: 750px;
+            color: #4a3b40;
+        }
+
+        /* Header Style */
+        .header {
+            text-align: center;
+            border-bottom: 2px dashed #ff9a9e;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            margin: 0 0 8px 0;
+            font-size: 2.3rem;
+            color: #d15b76;
+        }
+
+        .contact-info {
+            font-size: 0.95rem;
+            color: #705660;
+        }
+
+        .contact-info span {
+            margin: 0 8px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            color: #d15b76;
+            font-weight: bold;
+            border-bottom: 2px solid rgba(255, 154, 158, 0.3);
+            padding-bottom: 3px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #5a454d;
+        }
+
+        .item-sub {
+            font-style: italic;
+            color: #8c6e7a;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #5a454d;
+        }
+
+        li {
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        /* Bubble Stickers for Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background: rgba(255, 154, 158, 0.25);
+            border: 1px solid rgba(255, 154, 158, 0.4);
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #a83b54;
+        }
+
+        /* Background Floating Bubbles */
+        .bubbles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -120px;
+            background: rgba(255, 255, 255, 0.45);
+            border-radius: 50%;
+            animation: floatUp 12s infinite ease-in;
+        }
+
+        .bubble:nth-child(1) { left: 5%; width: 45px; height: 45px; animation-delay: 0s; animation-duration: 9s; }
+        .bubble:nth-child(2) { left: 25%; width: 25px; height: 25px; animation-delay: 3s; animation-duration: 11s; }
+        .bubble:nth-child(3) { left: 50%; width: 60px; height: 60px; animation-delay: 1s; animation-duration: 10s; }
+        .bubble:nth-child(4) { left: 75%; width: 35px; height: 35px; animation-delay: 6s; animation-duration: 8s; }
+        .bubble:nth-child(5) { left: 90%; width: 70px; height: 70px; animation-delay: 2s; animation-duration: 14s; }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0;
+            }
+            15% { opacity: 0.7; }
+            85% { opacity: 0.7; }
+            100% {
+                transform: translateY(-120vh) scale(1.3);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="resume-container">
+        
+        <div class="header">
+            <h1>Hi, I'm Jamie! 👋</h1>
+            <div class="contact-info">
+                <span>📧 jamie.studying@email.com</span> | 
+                <span>📱 (555) 987-6543</span> | 
+                <span>🌐 github.com/jamie-codes</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">About Me</div>
+            <p style="line-height: 1.5; margin: 0;">
+                I am a 2nd-year Computer Science student who loves building web apps and experimenting with frontend styles. Right now, I am looking for a cool summer internship where I can learn more about full-stack programming and work on real-world projects!
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="item">
+                <div class="item-header">
+                    <span>B.S. in Computer Science</span>
+                    <span>Expected Graduation: 2028</span>
+                </div>
+                <div class="item-sub">Oakridge University (GPA: 3.6/4.0)</div>
+                <p style="margin: 5px 0 0 0; font-size: 0.9rem; color: #705660;">
+                    <strong>Relevant Courses:</strong> Data Structures, Web Development 101, Introduction to Databases.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">My Projects 🚀</div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span>Flask Login System with Pink Theme</span>
+                    <span>Class Project</span>
+                </div>
+                <div class="item-sub">Python, Flask, SQLite, HTML/CSS</div>
+                <ul>
+                    <li>Built a secure web app that lets students register accounts and log in seamlessly.</li>
+                    <li>Connected a dynamic backend logic loop to a local SQLite database for fast user data lookups.</li>
+                    <li>Styled the entire interface with an animated pink gradient and floating bubbles!</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Campus Event Tracker</span>
+                    <span>Hackathon Project</span>
+                </div>
+                <div class="item-sub">HTML, CSS, JavaScript</div>
+                <ul>
+                    <li>Worked in a team of 3 to code a quick prototype site that helps students find free food on campus.</li>
+                    <li>Designed the clean, interactive map feature using simple frontend arrays.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Campus Life & Experience</div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span>Tech Committee Member</span>
+                    <span>2025 - Present</span>
+                </div>
+                <div class="item-sub">University Computer Science Club</div>
+                <ul>
+                    <li>Help organize weekly coding meetups and set up project showcases for freshmen students.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Student Computer Lab Assistant</span>
+                    <span>Part-Time Job</span>
+                </div>
+                <div class="item-sub">Campus Library</div>
+                <ul>
+                    <li>Assisted peers with basic technical debugging, printing issues, and connecting to the school Wi-Fi network.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">My Skills Toolkit</div>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>Flask Framework</li>
+                <li>SQLite Fundamentals</li>
+                <li>HTML5 & Custom CSS</li>
+                <li>Basic JavaScript</li>
+                <li>Git/GitHub</li>
+                <li>Team Collaboration</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
